@@ -1,0 +1,49 @@
+#pipocaMenu {
+    position: absolute;
+    width: 419px;
+    height: 356.65px;
+    left: 37%;
+    top: 22vh;
+}
+
+#cadastro {
+    position: absolute;
+    width: 320px;
+    height: 77px;
+    left: -26vh;
+    top: 68vh;
+
+    background: #E63C32;
+    border-radius: 10px;
+    border-color: transparent;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #F3F3F3;
+    font-size: 25px;
+}
+
+#login {
+    position: absolute;
+    width: 320px;
+    height: 77px;
+    left: 35vh;
+    top: 68vh;
+
+    background: #F3F3F3;
+    border-radius: 10px;
+    border-color: transparent;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #E63C32;
+    font-size: 25px;
+}
+
+#cadastro:hover {
+    background-color: #99241e;
+}
+
+#login:hover {
+    background-color: #d3d3d3;
+}

@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import logo from '../src/elementos/logo.svg';
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { ToastContainer} from 'react-toastify';
+import PaginaMenu from './pages/PaginaMenu/Index';
+import PaginaLogin from './pages/PaginaLogin/Index';
+import PaginaCadastro from './pages/PaginaCadastro/Index';
+import Header from './components/Header/Index';
+import Footer from './components/Footer/Index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  <>
+  <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/' element={<PaginaMenu />} />
+        <Route path='/paginalogin' element={<PaginaLogin />} />
+        <Route path='paginacadastro' element={<PaginaCadastro />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter><ToastContainer />
+    </>
+
+)}
 
 export default App;
