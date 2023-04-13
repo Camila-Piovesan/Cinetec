@@ -4,8 +4,9 @@ async function connect() {
   const connection = await mysql2.createConnection({
     host: 'localhost',
     port: 3306,
-    password: '',
-    database: 'cinetec'
+    user: 'root',
+    password: 'root',
+    database: 'filmes'
   });
 
   return connection;
